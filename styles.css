@@ -1,8 +1,8 @@
 /* styles.css */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
-    background: #0d1117;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(145deg, #141414, #1a1a1a);
     color: #e5e5e5;
     overflow-x: hidden;
 }
@@ -21,69 +21,96 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 1000;
 }
 
 .logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: bold;
     color: #f04c4c;
-    text-transform: uppercase;
 }
 
-.navbar a {
-    color: #e5e5e5;
+.navbar .nav-btn {
+    margin: 0 10px;
+    color: #fff;
     text-decoration: none;
-    margin: 0 15px;
+    transition: all 0.3s;
+}
+
+.navbar .nav-btn:hover {
+    color: #f04c4c;
 }
 
 .navbar .cta {
     background: #f04c4c;
     color: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.6rem 1rem;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .hero {
-    position: relative;
     height: 100vh;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+#backgroundCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-overlay {
+    position: relative;
     text-align: center;
+    z-index: 2;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
+.hero-overlay h1 {
+    font-size: 3rem;
     color: #fff;
-    margin-bottom: 1rem;
 }
 
-.hero p {
+.hero-overlay p {
     font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #b3b3b3;
+    margin: 1rem 0;
+    color: #cfcfcf;
 }
 
-.hero-content .btn-primary,
-.hero-content .btn-secondary {
-    padding: 0.75rem 1.5rem;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    text-decoration: none;
-    margin: 0.5rem;
-    display: inline-block;
-}
-
-.hero-content .btn-primary {
+.btn-primary {
     background: #f04c4c;
     color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    transition: all 0.3s;
 }
 
-.hero-content .btn-secondary {
+.btn-primary:hover {
+    background: #c03535;
+}
+
+.btn-secondary {
     background: #fff;
     color: #f04c4c;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover {
+    background: #ddd;
 }
 
 .features {
@@ -91,20 +118,20 @@ body {
     text-align: center;
 }
 
-.features-grid {
+.feature-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
 .feature-item {
-    background: #1c1f26;
+    background: #1f1f1f;
     padding: 2rem;
     border-radius: 10px;
 }
 
 .register {
-    background: #1c1f26;
+    background: #1a1a1a;
     padding: 3rem 0;
     text-align: center;
 }
@@ -116,27 +143,8 @@ body {
     gap: 1rem;
 }
 
-.register-form input {
-    width: 80%;
-    max-width: 400px;
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    margin: 0.5rem 0;
-}
-
-.register-form .btn-primary {
-    background: #f04c4c;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 .footer {
-    background: #101317;
+    background: #121212;
     padding: 1rem 0;
     text-align: center;
-}
+    }
