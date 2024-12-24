@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Log - Luxurious Car Solutions</title>
+    <title>Auto Log - RPG Inspired UI</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -13,9 +13,9 @@
         <div class="container">
             <h1 class="logo">Auto <span>Log</span></h1>
             <nav class="navbar">
-                <a href="#features">Features</a>
-                <a href="#services">Services</a>
-                <a href="#contact">Contact</a>
+                <a href="#features" class="nav-btn">Features</a>
+                <a href="#services" class="nav-btn">Services</a>
+                <a href="#contact" class="nav-btn">Contact</a>
                 <a href="#register" class="cta">Register</a>
             </nav>
         </div>
@@ -23,30 +23,31 @@
 
     <section class="hero">
         <canvas id="backgroundCanvas"></canvas>
-        <div class="hero-content">
+        <div class="hero-overlay">
             <h1>Welcome to Auto Log</h1>
-            <p>Your gateway to effortless car management, buying, and selling.</p>
-            <a href="#features" class="btn-primary">Learn More</a>
-            <a href="#register" class="btn-secondary">Register Now</a>
+            <p>Explore the ultimate car management experience.</p>
+            <div class="button-group">
+                <a href="#features" class="btn-primary">Discover Features</a>
+                <a href="#register" class="btn-secondary">Get Started</a>
+            </div>
         </div>
-        <canvas id="carCanvas"></canvas>
     </section>
 
     <section id="features" class="features">
         <div class="container">
             <h2>Features</h2>
-            <div class="features-grid">
+            <div class="feature-grid">
                 <div class="feature-item">
-                    <h3>Advanced Inventory</h3>
-                    <p>Track every car part with precision and ease.</p>
+                    <h3>Real-Time Inventory</h3>
+                    <p>Track and manage your car parts effortlessly.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Effortless Transactions</h3>
-                    <p>Seamless buying and selling experience.</p>
+                    <h3>Seamless Transactions</h3>
+                    <p>Experience smooth buying and selling workflows.</p>
                 </div>
                 <div class="feature-item">
-                    <h3>Powerful Analytics</h3>
-                    <p>Make informed decisions with detailed insights.</p>
+                    <h3>Advanced Analytics</h3>
+                    <p>Optimize decisions with powerful insights.</p>
                 </div>
             </div>
         </div>
@@ -54,8 +55,7 @@
 
     <section id="register" class="register">
         <div class="container">
-            <h2>Register Now</h2>
-            <p>Join Auto Log today and unlock exclusive features.</p>
+            <h2>Join Auto Log</h2>
             <form class="register-form">
                 <input type="text" placeholder="Full Name" required>
                 <input type="email" placeholder="Email Address" required>
@@ -67,10 +67,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Auto Log. Crafted for perfection.</p>
+            <p>&copy; 2024 Auto Log. Designed with passion.</p>
         </div>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
-</html>
+                </html>
