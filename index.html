@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Log - Manage, Buy & Sell Car Parts</title>
+    <title>Auto Log</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <img src="logo.png" alt="Auto Log" class="logo">
+            <h1 class="logo">Auto <span>Log</span></h1>
             <nav class="navbar">
                 <a href="#features">Features</a>
                 <a href="#about">About</a>
@@ -20,7 +21,8 @@
     </header>
 
     <section class="hero">
-        <div class="container">
+        <canvas id="carCanvas"></canvas>
+        <div class="hero-text">
             <h1>Welcome to Auto Log</h1>
             <p>Your ultimate solution for managing, buying, and selling car parts efficiently.</p>
             <a href="#signup" class="btn-primary">Get Started Now</a>
@@ -47,29 +49,12 @@
         </div>
     </section>
 
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Auto Log</h2>
-            <p>Auto Log is a cutting-edge platform designed for car enthusiasts and businesses. From inventory management to streamlined transactions, we provide all the tools you need to succeed in the automotive world.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
-            </form>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Auto Log. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
