@@ -2,8 +2,8 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
+    background: #000;
+    color: #fff;
 }
 
 .container {
@@ -13,16 +13,21 @@ body {
 }
 
 .header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
 }
 
-.header .logo span {
+.logo {
     color: #f04c4c;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .navbar a {
@@ -39,13 +44,26 @@ body {
 }
 
 .hero {
-    background: url('https://source.unsplash.com/1600x900/?cars') no-repeat center center/cover;
+    position: relative;
     height: 100vh;
-    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
+}
+
+#carCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    z-index: 2;
+    position: relative;
 }
 
 .hero h1 {
@@ -62,9 +80,8 @@ body {
     font-size: 1.2rem;
 }
 
-.features, .about, .contact {
+.features {
     padding: 2rem 0;
-    background: #f9f9f9;
 }
 
 .features-grid {
@@ -74,35 +91,14 @@ body {
 }
 
 .feature-item {
-    background: #fff;
+    background: #333;
     padding: 1.5rem;
-    border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
 }
 
-.contact form {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
-
-.contact input, .contact textarea, .contact button {
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.contact button {
-    background: #f04c4c;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
 .footer {
-    background: #333;
-    color: #fff;
+    background: #111;
     text-align: center;
     padding: 1rem 0;
 }
